@@ -1,0 +1,45 @@
+
+  .nav-link {
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #2563eb; /* Tailwind's 'blue-600' */
+    transition: width 0.3s ease-in-out;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+   /* Add these styles to ensure the mobile menu stays above the slideshow */
+   #mobile-menu {
+    z-index: 50; /* Set a higher z-index value to ensure the mobile menu is on top */
+    position: fixed; /* Make it fixed so it overlays over the content */
+  }
+
+  #slideshow {
+    z-index: 1; /* Lower z-index value for the slideshow */
+  }
+
+  /* Optional: Ensure that the mobile menu is visible by default when toggled */
+  #mobile-menu.open {
+    transform: translateX(0); /* Ensure it slides in when active */
+  }
+
+  /* slide show */
+
+
+
+  .dot.active {
+    background-color: #1e40af; /* Tailwind's 'blue-900' */
+  }
+
