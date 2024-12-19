@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @layer base {
     html {
       font-family: 'Poppins', 'Roboto', sans-serif;
@@ -8,4 +9,16 @@
     body {
       font-family: 'Roboto', sans-serif;
     }
+=======
+@layer base {
+    html {
+      font-family: 'Poppins', 'Roboto', sans-serif;
+    }
+    h1, h2, h3, .font-bold {
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+>>>>>>> fa29adc8cb59e461b1c56c913d179948c70c6166
   }
